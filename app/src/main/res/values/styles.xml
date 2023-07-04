@@ -1,0 +1,78 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="VulnEyeTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/blueGrey700</item>
+        <item name="colorPrimaryDark">@color/blueGrey950</item>
+        <item name="colorAccent">@color/orange500</item>
+        <item name="android:colorBackground">@color/blueGrey950</item>
+    </style>
+
+
+    <style name="textNormal">
+        <item name="android:textSize">@dimen/font_size_14</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="textMedium">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/unit_16dp</item>
+        <item name="android:textSize">@dimen/font_size_18</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="textBig">
+        <item name="android:padding">@dimen/unit_16dp</item>
+        <item name="android:textSize">@dimen/font_size_24</item>
+    </style>
+
+    <style name="prefElementDark">
+        <item name="android:textColor">@drawable/selector_text_dark</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textSize">@dimen/font_size_16</item>
+    </style>
+
+    <style name="prefElementDescriptionDark">
+        <item name="android:textColor">@color/blueGrey500</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textSize">@dimen/font_size_12</item>
+    </style>
+
+
+    <style name="btnClassicOrange">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/orange500</item>
+        <item name="android:layout_width">256dp</item>
+        <item name="android:textColor">@color/materialWhite</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textSize">@dimen/font_size_14</item>
+    </style>
+
+    <style name="btnClassicGrey">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/blueGrey950</item>
+        <item name="android:layout_width">256dp</item>
+        <item name="android:textColor">@color/materialWhite</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textSize">@dimen/font_size_14</item>
+    </style>
+
+    <style name="containerControlEye">
+        <item name="android:padding">@dimen/unit_8dp</item>
+        <item name="android:elevation">@dimen/unit_8dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/unit_16dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/font_size_14</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="containerControlEyeText">
+        <item name="android:textSize">@dimen/font_size_16</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+
+    </style>
+
+</resources>

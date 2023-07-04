@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:id="@+id/TOOLBAR_DONATE"
+        android:icon="@drawable/vector_donate"
+        android:title="Donate to Developers"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/TOOLBAR_HELP"
+        android:icon="@drawable/vector_help"
+        android:title="Help &amp; FeedBack"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/TOOLBAR_SHARE"
+        android:icon="@drawable/material_share"
+        android:title="Share"
+        app:showAsAction="ifRoom" />
+
+</menu>

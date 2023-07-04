@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <declare-styleable name="AttributesCircularProgressBar">
+        <attr name="filledArcColor" format="color" />
+        <attr name="unFilledArcColor" format="color" />
+        <attr name="circularBackgroundColor" format="color" />
+        <attr name="primaryTextColor" format="color" />
+        <attr name="secondaryTextColor" format="color" />
+        <attr name="primaryTextSize" format="dimension" />
+        <attr name="secondaryTextSize" format="dimension" />
+        <attr name="textDistance" format="dimension" />
+        <attr name="unFilledArcWidth" format="dimension" />
+        <attr name="filledArcWidth" format="dimension" />
+        <attr name="centerOffset" format="dimension" />
+        <attr name="secondaryText" format="string" />
+
+    </declare-styleable>
+
+
+</resources>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="ifContentScrolls">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="General"
+            android:textColor="#9E9E9E"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <!--Question one-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".9"
+                    android:gravity="start|center_vertical"
+                    android:text="What is your question?"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/Q1_Expand_Button"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_weight=".1"
+                    android:background="@null"
+                    android:src="@drawable/vector_down" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Q1_Answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:stretchColumns="1">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_span="2"
+                            android:layout_weight="1"
+                            android:text="might be answering the topic with help of hell file with this hell fire of life !!!" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView android:text="\u25CF" />
+
+                        <TextView
+                            android:layout_marginStart="4dp"
+                            android:layout_weight="1"
+                            android:text="inside bullet this is the answer of a question in very very long terms which can  go to next Line\nhere i have new line"
+                            android:textSize="16sp" />
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <!--Question two-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".9"
+                    android:gravity="start|center_vertical"
+                    android:text="What is your question?"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/Q2_Expand_Button"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_weight=".1"
+                    android:background="@null"
+                    android:src="@drawable/vector_down" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Q2_Answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:stretchColumns="1">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_span="2"
+                            android:layout_weight="1"
+                            android:text="might be answering the topic with help of hell file with this hell fire of life !!!" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView android:text="\u25CF" />
+
+                        <TextView
+                            android:layout_marginStart="4dp"
+                            android:layout_weight="1"
+                            android:text="inside bullet this is the answer of a question in very very long terms which can  go to next Line\nhere i have new line"
+                            android:textSize="16sp" />
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--Question three-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".9"
+                    android:gravity="start|center_vertical"
+                    android:text="What is your question?"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/Q3_Expand_Button"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_weight=".1"
+                    android:background="@null"
+                    android:src="@drawable/vector_down" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Q3_Answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:stretchColumns="1">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_span="2"
+                            android:layout_weight="1"
+                            android:text="might be answering the topic with help of hell file with this hell fire of life !!!" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView android:text="\u25CF" />
+
+                        <TextView
+                            android:layout_marginStart="4dp"
+                            android:layout_weight="1"
+                            android:text="inside bullet this is the answer of a question in very very long terms which can  go to next Line\nhere i have new line"
+                            android:textSize="16sp" />
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

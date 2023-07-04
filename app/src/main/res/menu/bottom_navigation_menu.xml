@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/NETWORK_EYE_OPENER"
+        android:icon="@drawable/material_network"
+        android:title="Network Eye" />
+
+    <item
+        android:id="@+id/SEQUEL_EYE_OPENER"
+        android:icon="@drawable/vector_database"
+        android:title="Sequel Eye" />
+
+    <item
+        android:id="@+id/ADMIN_EYE_OPENER"
+        android:icon="@drawable/vector_key"
+        android:title="Admin Eye" />
+
+    <item
+        android:id="@+id/LOGS_OPENER"
+        android:icon="@drawable/vector_file"
+        android:title="Logs" />
+
+
+
+    <item
+        android:id="@+id/SETTINGS_OPENER"
+        android:icon="@drawable/material_settings"
+        android:title="Settings" />
+
+
+</menu>

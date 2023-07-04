@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/VULNEYE_TOOLBAR"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/blueGrey800"
+            app:titleTextColor="@color/materialWhite" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/CONTAINER_FRAGMENT"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <LinearLayout
+        android:id="@+id/PREFRENCE_BOTTOMSHEET"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/materialWhite"
+        android:clickable="true"
+        android:elevation="@dimen/design_appbar_elevation"
+        android:orientation="vertical"
+        app:behavior_peekHeight="?attr/actionBarSize"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/BOTTOM_NAVIGATION_MENU"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/materialWhite"
+            app:elevation="@dimen/unit_4dp"
+            app:itemIconTint="@drawable/selector_bottom_nav"
+            app:itemTextColor="@color/blueGrey950"
+            app:menu="@menu/bottom_navigation_menu" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/PREFRENCE_BOTTOMSHEET_TITLE"
+                style="@style/textMedium"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/blueGrey700"
+                android:drawableRight="@drawable/vector_cross"
+                android:onClick="onClick"
+                android:text="Donate to Vulneye"
+                android:textColor="@color/materialWhite" />
+
+            <FrameLayout
+                android:id="@+id/CONTAINER_DONATE"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <fragment
+                    class="com.hammerbyte.vulneye.other_fragments.FragmentDonate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

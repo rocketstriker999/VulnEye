@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/unit_16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/unit_16dp">
+
+        <ImageView
+            android:id="@+id/LOGO_VULNEYE"
+            android:layout_width="192dp"
+            android:layout_height="192dp"
+            android:src="@mipmap/vulneye_highres" />
+
+        <TextView
+            style="@style/textBig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/app_name"
+            android:textColor="@color/materialWhite" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/textNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/unit_16dp"
+        android:text="Copyright © 2018-19 Hammerbyte"
+        android:textColor="@color/materialWhite" />
+
+</RelativeLayout>

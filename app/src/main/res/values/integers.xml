@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="positiveResponseList">
+        <item>100</item>
+        <item>101</item>
+        <item>102</item>
+        <item>200</item>
+        <item>201</item>
+        <item>202</item>
+        <item>203</item>
+        <item>204</item>
+        <item>205</item>
+        <item>206</item>
+        <item>207</item>
+        <item>208</item>
+        <item>226</item>
+        <item>300</item>
+        <item>301</item>
+        <item>302</item>
+        <item>303</item>
+        <item>304</item>
+        <item>305</item>
+        <item>306</item>
+        <item>307</item>
+        <item>308</item>
+    </integer-array>
+
+
+    <integer name="terminalLoadingTimeShort">1</integer>
+    <integer name="terminalLoadingTimeMedium">2</integer>
+    <integer name="terminalLoadingTimeLong">3</integer>
+
+
+
+</resources>

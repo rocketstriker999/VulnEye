@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="orange500">#FF5722</color>
+    <color name="blueGrey200">#b0bec5</color>
+    <color name="blueGrey500">#607D8B</color>
+    <color name="blueGrey600">#546E7A</color>
+    <color name="blueGrey700">#455A64</color>
+    <color name="blueGrey800">#37474F</color>
+    <color name="blueGrey850">#29363d</color>
+    <color name="blueGrey900">#263238</color>
+    <color name="blueGrey950">#1f292d</color>
+    <color name="blueGrey1000">#151B1E</color>
+
+    <color name="materialWhite">#fafafa</color>
+
+    <color name="colorDivider">#FFD8D8D8</color>
+
+
+
+</resources>

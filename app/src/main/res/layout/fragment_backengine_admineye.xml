@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.hammerbyte.vulneye.custom_views.ProgressBarCircular
+        android:id="@+id/PROGRESS_EYE"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_gravity="center"
+        android:padding="@dimen/unit_16dp"
+        app:centerOffset="@dimen/unit_8dp"
+        app:circularBackgroundColor="@color/materialWhite"
+        app:filledArcColor="@color/orange500"
+        app:filledArcWidth="@dimen/unit_2dp"
+        app:primaryTextColor="@color/orange500"
+        app:primaryTextSize="@dimen/font_size_56"
+        app:secondaryText="waiting for task !"
+        app:secondaryTextColor="@color/blueGrey950"
+        app:secondaryTextSize="@dimen/font_size_14"
+        app:textDistance="@dimen/font_size_12"
+        app:unFilledArcColor="@color/blueGrey950"
+        app:unFilledArcWidth="@dimen/unit_8dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/FAB_EYE_STOP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="@dimen/unit_16dp"
+        android:src="@drawable/vector_pause"
+        app:backgroundTint="@color/materialWhite" />
+
+</FrameLayout>

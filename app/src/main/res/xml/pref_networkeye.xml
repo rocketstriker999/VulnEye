@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:title="Eye Preference"
+        app:iconSpaceReserved="false">
+
+        <ListPreference
+            android:defaultValue="Host"
+            android:dialogTitle="Select Working Mode"
+            android:entries="@array/networkEyeWorkingModeChoice"
+            android:entryValues="@array/networkEyeWorkingModeChoice"
+            android:key="working_mode_networkeye"
+            android:layout="@layout/pref_editable_dark"
+            android:summary="%s"
+            android:title="Working Mode"
+            app:icon="@drawable/vector_work_mode" />
+
+        <EditTextPreference
+            android:defaultValue="80,82,90-100"
+            android:key="port_range"
+            android:layout="@layout/pref_editable_dark"
+            android:summary="Port Range"
+            android:title="Port Range"
+            app:icon="@drawable/vector_range"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:defaultValue="http://127.0.0.1"
+            android:key="target_host_networkeye"
+            android:layout="@layout/pref_editable_dark"
+            android:summary="Target Webserver or Website Address"
+            android:title="Target Host"
+            app:icon="@drawable/vector_target_url"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Performance"
+        app:iconSpaceReserved="false">
+
+        <CheckBoxPreference
+            android:key="multithreading_networkeye"
+            android:layout="@layout/pref_checkable_dark"
+            android:summary="allows to work faster according cores of CPU"
+            android:title="Multi Threading"
+            app:icon="@drawable/vector_flash" />
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:title="Connection"
+        app:iconSpaceReserved="false">
+
+        <SeekBarPreference
+            android:defaultValue="5"
+            android:key="connection_timeout_networkeye"
+            android:layout="@layout/pref_seekbar_dark"
+            android:max="10"
+            android:summary="Default Time out in order to connect with any host or web server"
+            android:title="Connection Timeout : "
+            app:icon="@drawable/material_watch"
+            app:showSeekBarValue="true" />
+
+
+        <SwitchPreference
+            android:key="use_proxy_networkeye"
+            android:layout="@layout/pref_checkable_dark"
+            android:summary="allows to use random user agent for requests in order to test any webserver or service"
+            android:title="Proxy"
+            app:icon="@drawable/vector_proxy" />
+
+        <EditTextPreference
+            android:dependency="use_proxy_networkeye"
+            android:defaultValue="127.0.0.1:80"
+            android:key="proxy_host_networkeye"
+            android:layout="@layout/pref_editable_dark"
+            android:summary="any summary"
+            android:title="Proxy Address"
+            app:icon="@drawable/vector_proxy_address"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:title="Logs"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreference
+            app:defaultValue="true"
+            android:key="save_logs_networkeye"
+            android:layout="@layout/pref_checkable_dark"
+            android:summary="Log will be saved"
+            android:title="Save Logs"
+            app:icon="@drawable/vector_delete" />
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
+
+
+
+
+
+

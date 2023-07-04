@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/unit_32dp"
+    android:background="@color/materialWhite"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:layout_weight="1"
+        android:background="@color/blueGrey850"
+        android:padding="@dimen/unit_32dp"
+        android:src="@drawable/material_license" />
+
+
+    <TextView
+        style="@style/textBig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/unit_16dp"
+        android:text="Vulneye Agreement"
+        android:textColor="@color/blueGrey950" />
+
+    <TextView
+        style="@style/textNormal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/unit_16dp"
+        android:paddingRight="@dimen/unit_16dp"
+        android:paddingBottom="@dimen/unit_16dp"
+        android:text="@string/permission_notice"
+        android:textColor="@color/blueGrey950" />
+
+
+    <Button
+        android:id="@+id/RUNTIME_PERMISSION_GRANT_BTN"
+        style="@style/btnClassicOrange"
+        android:layout_marginLeft="@dimen/unit_32dp"
+        android:layout_marginRight="@dimen/unit_32dp"
+        android:text="ACCEPTS TERMS &amp; CONDITIONS" />
+
+    <Button
+        android:id="@+id/RUNTIME_PERMISSION_DECLINE_BTN"
+        style="@style/btnClassicGrey"
+        android:layout_marginLeft="@dimen/unit_32dp"
+        android:layout_marginRight="@dimen/unit_32dp"
+        android:layout_marginBottom="@dimen/unit_16dp"
+        android:text="Exit VulnEye" />
+
+
+</LinearLayout>
+
+

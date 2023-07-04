@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hammerbyte.vulneye.fragment_managers.FragmentInputLogs">
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@color/blueGrey850"
+        android:elevation="@dimen/unit_8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/unit_16dp"
+        android:weightSum="1">
+
+        <RadioButton
+            android:id="@+id/NetworkEye_Logs_RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:text="Network Eye"
+            android:textColor="@color/materialWhite" />
+
+
+        <RadioButton
+            android:id="@+id/SequelEye_Logs_RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:text="Sequel Eye"
+            android:textColor="@color/materialWhite" />
+
+
+        <RadioButton
+            android:id="@+id/AdminEye_Logs_RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:text="Admin Eye"
+            android:textColor="@color/materialWhite" />
+
+    </RadioGroup>
+
+
+    <ListView
+        android:id="@+id/Logs_List_View"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="88dp"
+        android:background="@color/blueGrey850"
+        android:divider="@color/colorDivider"
+        android:dividerHeight="2px"
+        android:elevation="@dimen/unit_4dp" />
+
+
+    <TextView
+        android:id="@+id/Warning_Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="No Logs to Show !"
+        android:textSize="24sp"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:id="@+id/Logs_Bottom_Sheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blueGrey950"
+        android:clickable="true"
+        android:elevation="@dimen/unit_12dp"
+        app:behavior_peekHeight="0dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <RelativeLayout
+            android:id="@+id/File_Info_Header"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            android:background="@color/blueGrey700">
+
+            <TextView
+                android:id="@+id/File_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:gravity="start|center_vertical"
+                android:padding="@dimen/unit_16dp"
+                android:text="Example Name of File"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/Logs_Bottom_Sheet_Closer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:padding="@dimen/unit_16dp"
+                android:src="@drawable/vector_cross" />
+
+        </RelativeLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/File_Info_Header">
+
+
+            <TextView
+                android:id="@+id/Log_Shower"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="T\nhere\n is a Hs\n\n\n\n\n\n\n\n\n\n\n\n\neety S\n\n\n\n\nhit mes\n\n\n\n\nsage whi\n\n\n\nch wi\n\n\n\nll be d\n\n\nescri\n\n\nbing \n\n\n\nthe \n\n\n\nadva\n\n\n\nnta\n\n\n\nges\n\n\n\n for pu\n\n\nrchas\n\n\n\ning li\n\n\ncense \n\n\nfor V\n\n\nulneye" />
+
+
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

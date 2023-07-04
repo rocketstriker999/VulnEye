@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/unit_16dp">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:src="@drawable/material_donate" />
+
+    <TextView
+        style="@style/textBig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Small Donation Can Make Big Change !"
+        android:textColor="@color/blueGrey950" />
+
+    <TextView
+        style="@style/textNormal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/permission_notice"
+        android:textColor="@color/blueGrey950" />
+
+    <Button
+        android:id="@+id/DONATE_BTN"
+        style="@style/btnClassicOrange"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/unit_16dp"
+        android:text="Donate" />
+
+</LinearLayout>

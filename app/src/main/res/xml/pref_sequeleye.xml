@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="Eye Preference"
+        app:iconSpaceReserved="false">
+
+        <ListPreference
+            android:defaultValue="Dork"
+            android:dialogTitle="Select Target Plaform"
+            android:entries="@array/sequelEyeWorkingModeChoice"
+            android:entryValues="@array/sequelEyeWorkingModeChoice"
+            android:key="working_mode_sequeleye"
+            android:layout="@layout/pref_editable_dark"
+            android:summary="%s"
+            android:title="Working Mode"
+            app:icon="@drawable/vector_work_mode" />
+
+        <EditTextPreference
+            app:defaultValue="http://127.0.0.1:80"
+            android:key="target_host_sequeleye"
+            android:layout="@layout/pref_editable_dark"
+            android:title="Target Host"
+            app:icon="@drawable/vector_target_url"
+            app:useSimpleSummaryProvider="true" />
+
+
+        <EditTextPreference
+            app:defaultValue="inurl:.php?id="
+            android:key="target_dork_sequeleye"
+            android:layout="@layout/pref_editable_dark"
+            android:title="Target Dork"
+            app:icon="@drawable/vector_target_url"
+            app:useSimpleSummaryProvider="true" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Performance"
+        app:iconSpaceReserved="false">
+
+        <CheckBoxPreference
+            android:key="multithreading_sequeleye"
+            android:layout="@layout/pref_checkable_dark"
+            android:summary="allows to work faster according cores of CPU"
+            android:title="Multi Threading"
+            app:icon="@drawable/vector_flash" />
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:title="Connection"
+        app:iconSpaceReserved="false">
+
+        <SeekBarPreference
+            android:defaultValue="5"
+            android:key="connection_timeout_sequeleye"
+            android:layout="@layout/pref_seekbar_dark"
+            android:max="10"
+            android:summary="Default Time out in order to connect with any host or web server"
+            android:title="Connection Timeout : "
+            app:icon="@drawable/material_watch"
+            app:showSeekBarValue="true" />
+
+        <CheckBoxPreference
+            android:key="random_useragent_sequeleye"
+            android:layout="@layout/pref_checkable_dark"
+            android:summary="allows to use random user agent for requests in order to test any webserver or service"
+            android:title="Random User Agent"
+            app:icon="@drawable/vector_useragent" />
+
+        <SwitchPreference
+            android:key="use_proxy_sequeleye"
+            android:layout="@layout/pref_checkable_dark"
+            android:summary="allows to use random user agent for requests in order to test any webserver or service"
+            android:title="Proxy"
+            app:icon="@drawable/vector_proxy" />
+
+        <EditTextPreference
+            android:defaultValue="127.0.0.1:80"
+            android:dependency="use_proxy_sequeleye"
+            android:key="proxy_host_sequeleye"
+            android:layout="@layout/pref_editable_dark"
+            android:summary="any summary"
+            android:title="Proxy Address"
+            app:icon="@drawable/vector_proxy_address"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:title="Logs"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreference
+            android:key="save_logs_sequeleye"
+            android:layout="@layout/pref_checkable_dark"
+            android:summary="Log will be saved"
+            android:title="Save Logs"
+            app:defaultValue="true"
+            app:icon="@drawable/vector_delete" />
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="General"
+        app:iconSpaceReserved="false">
+
+        <CheckBoxPreference
+            android:key="sound"
+            android:layout="@layout/pref_checkable_dark"
+            android:summary="allow app to show Notification and play sound for user alert"
+            android:title="Sounds"
+            app:icon="@drawable/vector_volume" />
+
+        <CheckBoxPreference
+            android:key="notification"
+            android:layout="@layout/pref_checkable_dark"
+            android:summary="allow app to show Notification for alert"
+            android:title="Notification"
+            app:icon="@drawable/vector_notification" />
+
+        <ListPreference
+            android:defaultValue="NetworkEye"
+            android:dialogTitle="Select Tab"
+            android:entries="@array/startTabChoices"
+            android:entryValues="@array/startTabChoices"
+            android:key="start_tab"
+            android:layout="@layout/pref_editable_dark"
+            android:summary="%s"
+            android:title="Starting Tab"
+            app:icon="@drawable/vector_direction" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Logs"
+        app:iconSpaceReserved="false">
+
+        <ListPreference
+            android:defaultValue="ALL"
+            android:dialogTitle="Select Category"
+            android:entries="@array/showLogsChoice"
+            android:entryValues="@array/showLogsChoice"
+            android:key="show_logs"
+            android:layout="@layout/pref_editable_dark"
+            android:summary="%s"
+            android:title="Show Logs"
+            app:icon="@drawable/vector_sort" />
+
+        <SwitchPreference
+            android:key="show_new_logs"
+            android:layout="@layout/pref_checkable_dark"
+            android:summary="show newest logs first"
+            android:title="Show New Logs First"
+            app:icon="@drawable/vector_calender" />
+
+        <SwitchPreference
+            android:key="log_delete_confirm"
+            android:layout="@layout/pref_checkable_dark"
+            android:summary="allow app to show Notification for alert"
+            android:title="Confirm Before Delete"
+            app:icon="@drawable/vector_delete" />
+
+
+
+        <CheckBoxPreference
+            android:key="auto_delete"
+            android:layout="@layout/pref_checkable_dark"
+            android:summary="Automatically Logs will be deleted 30 days older to save the space"
+            android:title="Delete Logs 30 Days Older"
+            app:icon="@drawable/vector_calender" />
+
+
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="About"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:key="check_update"
+            android:layout="@layout/pref_editable_dark"
+            android:summary="check for updates of vulneye to get new latest features of app"
+            android:title="Check for Updates"
+            app:icon="@drawable/vector_update" />
+
+        <Preference
+            android:key="build_version"
+            android:layout="@layout/pref_editable_dark"
+            android:summary="VE1S"
+            android:title="Build Version"
+            app:icon="@drawable/vector_info" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
